@@ -161,9 +161,10 @@
     <h1 style="margin-bottom:0;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent">CASH NOW</h1>
   </div>
   <p class="lead" style="color:var(--sub);font-size:15px;margin-bottom:2px">ファクナビ — ファクタリング一括見積もりサイト（顧客獲得 + 信用データ蓄積） / <a href="https://facnavi.info/" target="_blank" style="color:var(--accent-text);text-decoration:none;font-weight:700">facnavi.info</a></p>
-  <p class="lead" style="color:var(--sub);font-size:15px">CASH NOW — 自己勘定ファクタリング会社（蓄積データで投資を段階的に拡大） / <a href="https://cash.co.jp/" target="_blank" style="color:var(--accent2-text);text-decoration:none;font-weight:700">cash.co.jp</a></p>
+  <p class="lead" style="color:var(--sub);font-size:15px;margin-bottom:2px">CASH NOW — 自己勘定ファクタリング会社（蓄積データで投資を段階的に拡大） / <a href="https://cash.co.jp/" target="_blank" style="color:var(--accent2-text);text-decoration:none;font-weight:700">cash.co.jp</a></p>
+  <p class="lead" style="color:var(--sub);font-size:15px">CASH NOW CORE — 信用スコアリングエンジン（ファクナビ・CASH NOW 双方が利用、外販も可能）</p>
   <div class="one-liner">申込データを学習し、<br>自己勘定投資を段階的に拡大する。</div>
-  <p class="lead">ファクナビで顧客と信用データを獲得し、その精度を CASH NOW の自己勘定投資に直接フィードバックする。<strong>データが厚くなるほど投資が攻められる</strong> 構造を作る。</p>
+  <p class="lead">ファクナビで顧客と信用データを獲得し、<strong>CASH NOW CORE</strong> でスコアリング、CASH NOW の自己勘定投資に直接フィードバック。<strong>データが厚くなるほど投資が攻められる</strong> 構造を作る。</p>
   <div class="meta">
     <div>Founder<strong>糀屋 総一朗</strong></div>
     <div>Company<strong>ローカルツーリズム株式会社（名称変更予定）</strong></div>
@@ -189,11 +190,11 @@
     </div>
     <div class="card">
       <h3>③ CASH NOW の自社一次データ</h3>
-      <p>自己勘定で買い取った案件の <strong>実回収結果を一次データとして即時取得</strong>。自社買取分はラベル付き教師データとして、AIスコアの再訓練に直接使える。</p>
+      <p>自己勘定で買い取った案件の <strong>実回収結果を一次データとして即時取得</strong>。自社買取分はラベル付き教師データとして、CASH NOW CORE の再訓練に直接使える。</p>
     </div>
     <div class="card">
-      <h3>④ 業種 × 売掛先別の回収モデル</h3>
-      <p>蓄積データを <strong>業種 × 売掛先規模 × 期日 × 過去入金パターン</strong> で分解し、回収率モデルを継続更新。CASH NOW の投資判断に直結する独自スコアを構築。</p>
+      <h3>④ CASH NOW CORE が学習し続ける</h3>
+      <p>蓄積データを <strong>業種 × 売掛先規模 × 期日 × 過去入金パターン</strong> で分解し、信用スコアリングエンジン CASH NOW CORE が継続更新。ファクナビと CASH NOW の両方で同じ最新スコアが使われる。</p>
     </div>
   </div>
   <p class="sub" style="margin-top:14px">既存買取会社は自社案件のデータしか持たず、比較サイトは送客で完結し回収結果まで追わない。<strong style="color:var(--accent-text)">①〜④を同じ会社で繋ぐ</strong> ことが我々の差別化の核。</p>
@@ -222,38 +223,40 @@
 <section class="slide">
   <div class="num">04</div>
   <span class="tag">Solution</span>
-  <h2>顧客と信用データはファクナビ。<br>自己勘定投資は CASH NOW。</h2>
-  <p class="lead">申込→審査→送客でデータを蓄積し、その精度をCASH NOWの自己勘定投資に直接フィードバックする。</p>
-  <div class="twoco">
+  <h2>3層アーキテクチャ。<br>中央に CASH NOW CORE（信用スコアリングエンジン）。</h2>
+  <p class="lead">ファクナビ（顧客獲得）と CASH NOW（自己勘定投資）が、共通エンジン CASH NOW CORE を介して接続される。</p>
+  <div class="twoco" style="margin-top:14px">
     <div class="twoco-card a">
       <div class="label">顧客獲得 + データ蓄積層</div>
       <div class="name">ファクナビ</div>
-      <div class="role">一括見積もりサイト + 信用スコアエンジン</div>
+      <div class="role">一括見積もりサイト</div>
       <ul>
         <li>申込受付・書類OCR・整合性チェック</li>
-        <li>真正性スコア / 回収可能性スコア</li>
         <li>提携先マッチング・送客手数料</li>
         <li>実回収データの取得とモデル改善</li>
       </ul>
     </div>
     <div class="twoco-bridge">
-      <div class="word">DATA</div>
+      <div class="word">SCORE</div>
       <div class="arrow">⇄</div>
-      <div class="word">FEEDBACK</div>
+      <div class="word">DATA</div>
     </div>
     <div class="twoco-card b">
       <div class="label">自己勘定投資層</div>
       <div class="name">CASH NOW</div>
       <div class="role">自己勘定ファクタリング会社</div>
       <ul>
-        <li>ファクナビのスコアを使って投資判断</li>
+        <li>CORE のスコアを使って投資判断</li>
         <li>初期はAランク・少額のみ、データに応じて拡大</li>
         <li>債権買取差益・回収益で稼ぐ</li>
-        <li>蓄積データが厚くなるほど投資規模を拡大</li>
       </ul>
     </div>
   </div>
-  <p class="sub" style="margin-top:14px">ファクナビで蓄積した信用データが厚くなるほど、<strong style="color:var(--accent-text)">CASH NOW はリスクを抑えながら投資規模を拡大</strong>できる。データが資本効率の差を生む。</p>
+  <div style="margin-top:14px;padding:18px 24px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-radius:14px;box-shadow:0 12px 32px rgba(59,109,255,.3)">
+    <div style="font-size:11px;letter-spacing:.18em;font-weight:700;opacity:.85;text-transform:uppercase">信用スコアリングエンジン</div>
+    <div style="font-size:22px;font-weight:800;margin-top:2px">CASH NOW CORE</div>
+    <div style="font-size:13px;margin-top:6px;line-height:1.6;opacity:.95">真正性スコア / 回収可能性スコア / 申込者リスクスコア。<strong>ファクナビと CASH NOW が同じエンジンを利用</strong> し、申込母集団・提携先回収結果・自己勘定投資の実データを一つの学習ループに統合する。将来は他ファクタリング会社・会計SaaS・銀行への外販も視野。</div>
+  </div>
 </section>
 
 <!-- 05 Limited Buy Strategy -->
@@ -266,7 +269,7 @@
     <div class="card">
       <h3>CASH NOW 初期の買取条件</h3>
       <ul>
-        <li>ファクナビで <strong>Aランク</strong> 判定</li>
+        <li>CASH NOW CORE で <strong>Aランク</strong> 判定</li>
         <li>過去入金確認済み</li>
         <li>支払期日 <strong>45日以内</strong></li>
         <li>売掛先が法人・一定規模以上</li>
@@ -274,7 +277,6 @@
         <li>二重譲渡リスク低い</li>
         <li>買取額 <strong>30万〜200万円</strong></li>
       </ul>
-      <p class="sub" style="margin-top:8px;font-size:11px">※ ペイトナー・ラボル等の他社利用履歴は <strong style="color:var(--accent-text)">審査済みユーザー</strong> としてプラス評価</p>
     </div>
     <div class="card">
       <h3>段階的に拡大していく</h3>
@@ -282,13 +284,15 @@
     </div>
   </div>
   <div class="loop">
-    <div class="step"><strong>ファクナビ</strong><span>申込・スコアリング</span></div>
+    <div class="step"><strong>ファクナビ</strong><span>申込受付</span></div>
     <div class="a">→</div>
-    <div class="step"><strong>CASH NOW</strong><span>段階的に自己勘定投資</span></div>
+    <div class="step"><strong>CASH NOW CORE</strong><span>スコアリング</span></div>
+    <div class="a">→</div>
+    <div class="step"><strong>CASH NOW</strong><span>段階的に投資</span></div>
     <div class="a">→</div>
     <div class="step"><strong>実回収</strong><span>データ取得</span></div>
     <div class="a">→</div>
-    <div class="step"><strong>ファクナビ</strong><span>モデル改善・投資範囲拡大</span></div>
+    <div class="step"><strong>CORE 再学習</strong><span>投資範囲拡大</span></div>
     <div class="a">↻</div>
   </div>
 </section>
@@ -473,8 +477,8 @@
     </div>
     <div class="phase">
       <div class="when">Phase 3 · 18ヶ月–</div>
-      <h3 style="margin-top:6px">審査API・データ外販 + 投資の主軸化</h3>
-      <p style="font-size:13px">他ファクタリング会社・会計SaaS・銀行へファクナビの審査API・業種別データを外販。CASH NOW の自己勘定投資を収益の主軸にする。</p>
+      <h3 style="margin-top:6px">CORE 外販 + 投資の主軸化</h3>
+      <p style="font-size:13px">他ファクタリング会社・会計SaaS・銀行へ <strong>CASH NOW CORE</strong>（信用スコアリングAPI）と業種別データを外販。CASH NOW の自己勘定投資を収益の主軸にする。</p>
     </div>
   </div>
   <div class="footer-line">ファクナビのCAC低減策：業種別LP × SEO × 既存ファクタリング会社からの送客逆流（手数料負担減を訴求）。</div>
@@ -490,7 +494,7 @@
       <div class="when">Month 0–3 · Build</div>
       <ul>
         <li>ファクナビ / CASH NOW の法人設立・契約雛形・規約整備</li>
-        <li>申込受付・OCR・スコアリング MVP の実装</li>
+        <li>申込受付・OCR・<strong>CASH NOW CORE</strong>（信用スコアリングエンジン）MVP の実装</li>
         <li>提携先5社と LOI、CASH NOW の自己勘定投資準備</li>
       </ul>
     </div>
@@ -507,7 +511,7 @@
       <ul>
         <li>GMV 5億円・成約1,000件超</li>
         <li>CASH NOW 貸倒率 &lt;1% を実証、自己勘定投資の規模拡大</li>
-        <li>Series A 準備（審査API・データ外販）</li>
+        <li>Series A 準備（CASH NOW CORE 外販・データ商品化）</li>
       </ul>
     </div>
   </div>
