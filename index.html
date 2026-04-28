@@ -247,50 +247,9 @@
   <p class="sub" style="margin-top:14px">B社は「優遇された自社部門」ではなく、<strong style="color:var(--accent-text)">透明なルールで参加する提携先の1社</strong>として扱う。これが中立性の核。</p>
 </section>
 
-<!-- 05 AI Agents -->
+<!-- 05 Limited Buy Strategy -->
 <section class="slide">
   <div class="num">05</div>
-  <span class="tag">AI-First Operation</span>
-  <h2>10体のAIエージェントが業務を回す。</h2>
-  <p class="lead">人を増やすのではなく、業務を「エージェント単位」に分割する。AI 90% + 人間レビュー 10% で運営。</p>
-  <div class="agents">
-    <div class="agent"><div class="n">01</div><div class="nm">集客</div><div class="ds">SEO・LP・広告文・業種別訴求</div></div>
-    <div class="agent"><div class="n">02</div><div class="nm">受付</div><div class="ds">申込フォーム・書類案内・追加質問</div></div>
-    <div class="agent"><div class="n">03</div><div class="nm">書類読取</div><div class="ds">請求書・銀行明細・通帳の構造化</div></div>
-    <div class="agent"><div class="n">04</div><div class="nm">整合性</div><div class="ds">請求額・入金履歴・売掛先の矛盾検出</div></div>
-    <div class="agent"><div class="n">05</div><div class="nm">不正疑義</div><div class="ds">架空請求・二重譲渡・PDF改ざん検知</div></div>
-    <div class="agent"><div class="n">06</div><div class="nm">スコアリング</div><div class="ds">真正性 / 回収可能性 / 申込者リスク</div></div>
-    <div class="agent"><div class="n">07</div><div class="nm">マッチング</div><div class="ds">案件属性に応じた提携先配信</div></div>
-    <div class="agent"><div class="n">08</div><div class="nm">コンプラ</div><div class="ds">広告表現・規約・同意・利益相反開示</div></div>
-    <div class="agent"><div class="n">09</div><div class="nm">回収結果</div><div class="ds">成約・買取額・実回収・遅延の取得</div></div>
-    <div class="agent"><div class="n">10</div><div class="nm">モデル改善</div><div class="ds">A/B/C/Dランク別の精度分析</div></div>
-  </div>
-  <h3 style="margin-top:22px">人間が見るべき10%</h3>
-  <p style="font-size:13px">高額案件 / 初回取引 / Cランク境界 / 不正疑義あり / 自社B社に流す案件 / クレーム / 法務・規制に絡む表現 — ここだけ人間レビュー、それ以外はAIで流す。</p>
-</section>
-
-<!-- 06 Conflict-of-Interest Rules -->
-<section class="slide">
-  <div class="num">06</div>
-  <span class="tag">Governance</span>
-  <h2>別会社化 + 7つの利益相反ルール。</h2>
-  <p class="lead">分けるだけでは足りない。実態として中立を担保するルールを最初から組み込む。</p>
-  <div class="rules-grid">
-    <div class="rule"><div class="icon">1</div><div class="ttl">グループ会社開示</div><div class="ds">「紹介先には当社グループ会社が含まれる場合があります」を明示</div></div>
-    <div class="rule"><div class="icon">2</div><div class="ttl">選定基準の開示</div><div class="ds">手数料・スピード・対応業種・必要書類・成約実績・希望条件で選定</div></div>
-    <div class="rule"><div class="icon">3</div><div class="ttl">ユーザーの選択権</div><div class="ds">複数候補を提示。「グループ会社を除外」する選択肢も用意</div></div>
-    <div class="rule"><div class="icon">4</div><div class="ttl">配信ログ保存</div><div class="ds">なぜその会社に配信したかを記録。後から説明できる状態に</div></div>
-    <div class="rule"><div class="icon">5</div><div class="ttl">B社優先配信の禁止</div><div class="ds">他社と同条件で入札。透明なルールに基づく場合のみ参加</div></div>
-    <div class="rule"><div class="icon">6</div><div class="ttl">価格比較の透明性</div><div class="ds">B社条件と他社条件を同列で比較。ユーザー不利益にB社へ寄せない</div></div>
-    <div class="rule"><div class="icon">7</div><div class="ttl">データ利用同意</div><div class="ds">利用目的・第三者提供・グループ共有を明記、ユーザー同意を取得</div></div>
-    <div class="rule"><div class="icon">8</div><div class="ttl">独立した契約判断</div><div class="ds">B社は契約条件提示を独立判断。A社の他提携先と同じ情報粒度</div></div>
-  </div>
-  <p class="sub" style="margin-top:14px">これらは「機能」ではなく <strong style="color:var(--accent-text)">最初の設計</strong>。後付けでは信頼を取り戻せない。</p>
-</section>
-
-<!-- 07 Limited Buy Strategy -->
-<section class="slide">
-  <div class="num">07</div>
   <span class="tag">B社の戦略</span>
   <h2>B社は"選別型買取"から始める。</h2>
   <p class="lead">いきなり全案件を買いに行かない。最初は A社の信用モデルを検証する小さな買取に限定する。</p>
@@ -325,38 +284,9 @@
   </div>
 </section>
 
-<!-- 08 Why Split -->
+<!-- 06 Market -->
 <section class="slide">
-  <div class="num">08</div>
-  <span class="tag">Why Split</span>
-  <h2>会社を分けるべき5つの理由。</h2>
-  <div class="grid g2">
-    <div class="card">
-      <h3>① 中立性の見え方</h3>
-      <p>同社が比較と買取を兼ねると、「自社優先では？」という疑念が生まれる。法人を分け、A社の選定基準を明示することで透明性を担保。</p>
-    </div>
-    <div class="card">
-      <h3>② 提携先との関係</h3>
-      <p>他のファクタリング会社から「良い案件を抜かれているのでは」と疑われない。A社とB社のルールを公開できる構造に。</p>
-    </div>
-    <div class="card">
-      <h3>③ リスク遮断</h3>
-      <p>B社の未回収・訴訟・苦情・資金繰りリスクが、A社の送客・データ事業に波及しない。法人分離はリスク遮断。</p>
-    </div>
-    <div class="card">
-      <h3>④ 資金調達のしやすさ</h3>
-      <p>A社はアセットライトSaaS、B社は資金を張る金融。投資家から見た KPI・バリュエーション・リスクが全く違う。分けた方が説明しやすい。</p>
-    </div>
-  </div>
-  <div class="card" style="margin-top:14px">
-    <h3>⑤ 将来の売却・提携の自由度</h3>
-    <p>A社だけ売る、B社だけに資金を入れる、A社を金融機関と提携、B社を SPV化する — どのオプションも取れるようになる。</p>
-  </div>
-</section>
-
-<!-- 09 Market -->
-<section class="slide">
-  <div class="num">09</div>
+  <div class="num">06</div>
   <span class="tag">Market</span>
   <h2>27兆円のファクタリング市場、その入口を取る。</h2>
   <p class="lead">単独で買取するのではなく、市場全体の「マッチングと信用モデル」を取りに行く。</p>
@@ -375,7 +305,7 @@
 
 <!-- 10 Business Model -->
 <section class="slide">
-  <div class="num">10</div>
+  <div class="num">07</div>
   <span class="tag">Business Model</span>
   <h2>2社2収益。アセットライト × 資金収益。</h2>
   <p class="lead">A社は手数料・月額・APIで稼ぎ、B社は債権買取差益で稼ぐ。リスクと収益を切り分ける。</p>
@@ -396,7 +326,7 @@
 
 <!-- 11 Unit Economics -->
 <section class="slide">
-  <div class="num">11</div>
+  <div class="num">08</div>
   <span class="tag">Unit Economics</span>
   <h2>1案件あたりの経済性。</h2>
   <p class="lead">A社は1件あたり1〜3万円の手数料。B社はAランクのみで貸倒1%以下を狙う。</p>
@@ -431,7 +361,7 @@
 
 <!-- 12 Financials -->
 <section class="slide">
-  <div class="num">12</div>
+  <div class="num">09</div>
   <span class="tag">3-Year Financials (A社単体)</span>
   <h2>3年目で営業利益 8,000万〜1.2億円。</h2>
   <p class="lead">AIエージェント前提で人件費を圧縮。アセットライトSaaSとしての収益性を狙う。</p>
@@ -459,7 +389,7 @@
 
 <!-- 13 Competition -->
 <section class="slide">
-  <div class="num">13</div>
+  <div class="num">10</div>
   <span class="tag">Competition</span>
   <h2>"AI × 透明性 × 自社買取分離"を全部満たす相手はいない。</h2>
   <p class="lead">既存の比較サイトは AI なし、買取会社は中立性なし、SaaSは資金化なし。空席のポジション。</p>
@@ -478,7 +408,7 @@
 
 <!-- 14 Compliance -->
 <section class="slide">
-  <div class="num">14</div>
+  <div class="num">11</div>
   <span class="tag">Compliance</span>
   <h2>金融庁の注意喚起を、最初から織り込む。</h2>
   <p class="lead">ファクタリングは規制グレーゾーン。「貸付と評価され得る」要件を回避する設計を初日から。</p>
@@ -512,7 +442,7 @@
 
 <!-- 15 GTM -->
 <section class="slide">
-  <div class="num">15</div>
+  <div class="num">12</div>
   <span class="tag">Go-to-Market</span>
   <h2>業種別LP × AIエージェント × 提携先網。</h2>
   <p class="lead">既存比較サイトの「網羅型SEO」ではなく、業種ごとに尖ったLPと AI受付で差別化する。</p>
@@ -538,7 +468,7 @@
 
 <!-- 16 Roadmap -->
 <section class="slide">
-  <div class="num">16</div>
+  <div class="num">13</div>
   <span class="tag">Roadmap</span>
   <h2>12ヶ月で"AI完結 × 透明配信"の証明を出す。</h2>
   <div class="timeline">
@@ -571,7 +501,7 @@
 
 <!-- 17 Team -->
 <section class="slide">
-  <div class="num">17</div>
+  <div class="num">14</div>
   <span class="tag">Team</span>
   <h2>金融×AI×ソロプレナー運営の複合体制。</h2>
   <div class="grid g2">
@@ -596,7 +526,7 @@
 
 <!-- 18 Funding -->
 <section class="slide">
-  <div class="num">18</div>
+  <div class="num">15</div>
   <span class="tag">Funding & Use of Funds</span>
   <h2>A社・B社それぞれで調達。リスクを混ぜない。</h2>
   <p class="lead">A社はSaaS型エクイティ調達、B社は自己資金 + デット + SPVで原資を確保。投資家から見ても説明しやすい。</p>
@@ -630,7 +560,7 @@
 
 <!-- 19 Closing -->
 <section class="slide">
-  <div class="num">19</div>
+  <div class="num">16</div>
   <span class="tag">Closing</span>
   <h2>中立な比較と、自己買取を、別会社で。</h2>
   <p class="lead">「同じ会社が比較も買取もやる」時代は、もう信用されない。</p>
@@ -650,7 +580,7 @@
 
 <div class="nav">
   <button id="prev">‹ Prev</button>
-  <div class="counter" id="counter">1 / 19</div>
+  <div class="counter" id="counter">1 / 16</div>
   <button id="next">Next ›</button>
 </div>
 
