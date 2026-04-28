@@ -176,37 +176,46 @@
 <section class="slide">
   <div class="num">02</div>
   <span class="tag">Why Now</span>
-  <h2>信用データを蓄積する条件が、揃った。</h2>
-  <p class="lead">ファクタリング業界に、申込データを蓄積し自己勘定投資に活かすプレイヤーがいない。</p>
-  <div class="grid g2">
-    <div class="card"><h3>① 申込データを構造化できる時代に</h3><p>請求書・通帳・銀行明細・会計データを機械可読に取り込める。受付から審査までの自動化が現実的に。</p></div>
-    <div class="card"><h3>② 金融庁の注意喚起</h3><p>偽装ファクタリング・無登録貸付への注意喚起。リスクを正しく評価し、データに基づいた投資判断を行う設計に市場価値。</p></div>
-    <div class="card"><h3>③ APIとデータの整備</h3><p>請求書・銀行明細・会計・本人確認のAPIが揃い、「申込→真正性確認→スコアリング」を自動化できる前提が整った。</p></div>
-    <div class="card"><h3>④ 信用データを持つ事業者の不在</h3><p>既存比較サイトはSEO露出のみ、買取会社は経験ベースの審査。実回収データを蓄積し投資に活かすプレイヤーが空席。</p></div>
+  <h2>信用データを「業界横断」で蓄積する。</h2>
+  <p class="lead">既存事業者はそれぞれ個社内のデータを持つが、<strong>申込母集団 × 提携先回収結果 × 自己勘定投資の実データ</strong> を一つの層に統合した事業者は存在しない。ここを取りに行く。</p>
+  <div class="grid g4">
+    <div class="card">
+      <h3>① 申込母集団データ</h3>
+      <p>ファクナビの受付段階で、請求書・通帳・銀行明細・会計データ・売掛先属性・申込者属性を機械可読で構造化保存。<strong>提携先に流す前の全件</strong> がデータベース化される。</p>
+    </div>
+    <div class="card">
+      <h3>② 提携先からの回収フィードバック</h3>
+      <p>提携契約に <strong>成約可否・買取条件・実回収日・遅延・貸倒</strong> の返送義務を組み込む。月額掲載・成約手数料の対価として、業界横断の回収結果データを得る。</p>
+    </div>
+    <div class="card">
+      <h3>③ CASH NOW の自社一次データ</h3>
+      <p>自己勘定で買い取った案件の <strong>実回収結果を一次データとして即時取得</strong>。自社買取分はラベル付き教師データとして、AIスコアの再訓練に直接使える。</p>
+    </div>
+    <div class="card">
+      <h3>④ 業種 × 売掛先別の回収モデル</h3>
+      <p>蓄積データを <strong>業種 × 売掛先規模 × 期日 × 過去入金パターン</strong> で分解し、回収率モデルを継続更新。CASH NOW の投資判断に直結する独自スコアを構築。</p>
+    </div>
   </div>
+  <p class="sub" style="margin-top:14px">既存買取会社は自社案件のデータしか持たず、比較サイトは送客で完結し回収結果まで追わない。<strong style="color:var(--accent-text)">①〜④を同じ会社で繋ぐ</strong> ことが我々の差別化の核。</p>
 </section>
 
 <!-- 03 Problem -->
 <section class="slide">
   <div class="num">03</div>
   <span class="tag">Problem</span>
-  <h2>既存比較サイトは、ただのSEO媒体に過ぎない。</h2>
-  <p class="lead">露出と電話送客はあるが、申込データを学習せず、自己勘定投資にも繋げていない。広告アービトラージの域を出ない。</p>
+  <h2>業界横断のデータ層が、まだ存在しない。</h2>
+  <p class="lead">買取会社は各社それぞれ自社案件の審査データを持っているが、<strong>申込母集団 × 提携先回収結果 × 自己勘定投資</strong> を統合した業界横断のデータ層は誰も作れていない。</p>
   <div class="grid g3">
-    <div class="card"><div class="big">SEO一本足</div><p class="sub" style="margin-top:6px">流入のほとんどが検索広告・SEO頼み。信用評価は提携先まかせ</p></div>
-    <div class="card"><div class="big">審査ロジックなし</div><p class="sub" style="margin-top:6px">申込書を提携先に流すだけ。AI審査・スコアリングを持たない</p></div>
-    <div class="card"><div class="big">投資化していない</div><p class="sub" style="margin-top:6px">自己勘定買取のループがなく、データが事業価値に転化しない</p></div>
+    <div class="card"><div class="big">SEO中心</div><p class="sub" style="margin-top:6px">比較サイトの主機能は流入と送客。回収結果まで追跡する仕組みは限定的</p></div>
+    <div class="card"><div class="big">個社で完結</div><p class="sub" style="margin-top:6px">買取会社のデータは自社案件のみ。業界横断のスコア・モデルは存在しない</p></div>
+    <div class="card"><div class="big">投資との未接続</div><p class="sub" style="margin-top:6px">送客と自己勘定投資が同一事業者でループしておらず、データが資本に転化しない</p></div>
   </div>
   <h3 style="margin-top:22px">既存プレイヤーの構造的な3つの欠陥</h3>
   <ul>
-    <li><strong>申込データが分散・蓄積されない</strong>：申込ごとに同じ書類を提出し、信用モデルが育たない</li>
-    <li><strong>実回収データが共有されない</strong>：各買取会社が経験ベースで審査、リスクプレミアムが手数料に乗る</li>
+    <li><strong>申込データが分散</strong>：ユーザーは申込ごとに同じ書類を出し直し、業界横断の信用モデルが育たない</li>
+    <li><strong>実回収データが個社内に閉じる</strong>：各買取会社が経験ベースで審査、リスクプレミアムが手数料に乗る</li>
     <li><strong>顧客獲得層と投資層が分断</strong>：比較サイトは送客手数料で完結、買取会社はその場の判断に依存</li>
   </ul>
-  <div class="warn-box">
-    <div class="ic">⚠️</div>
-    <div class="tx">金融庁は、債務者の不払いリスクを業者がほとんど負わない場合などに、ファクタリングが <strong>実質的に貸付と評価される可能性</strong> がある旨を示している（金融庁 注意喚起）。<strong>データに基づくリスク評価設計</strong> が市場価値の源泉になる。</div>
-  </div>
 </section>
 
 <!-- 04 Solution -->
